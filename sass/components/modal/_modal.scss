@@ -36,7 +36,7 @@
   transition: transform 250ms $cubic, scale 250ms $cubic, opacity 250ms $cubic;
 
   @media screen and (max-width: 1199px) {
-    width: 450px;
+    max-width: 450px;
     height: 609px;
   }
 
@@ -186,7 +186,7 @@
 
 .form__checkbox-icon {
   display: inline-block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   margin-right: 8px;
   border: 2px solid #212121;
