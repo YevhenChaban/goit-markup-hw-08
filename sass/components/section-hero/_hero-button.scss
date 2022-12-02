@@ -1,0 +1,26 @@
+.hero-button {
+  margin-top: 30px;
+  width: 216px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: $white-color;
+  background-color: $accent-color;
+  transition: background-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-accent;
+  }
+}

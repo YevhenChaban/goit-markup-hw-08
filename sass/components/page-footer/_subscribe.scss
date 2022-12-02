@@ -1,0 +1,112 @@
+/* subscribe */
+
+.subscribe {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-self: flex-end;
+    justify-self: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+.subscribe__form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.subscribe__label {
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    align-items: baseline;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
+.subscribe__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+  color: $white-color;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  &:focus-visible {
+    border-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+    border-color: $white-color;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+}
+
+.subscribe__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  color: $white-color;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.subscribe__icon {
+  display: inline-block;
+  fill: $white-color;
+  margin-left: 10px;
+}

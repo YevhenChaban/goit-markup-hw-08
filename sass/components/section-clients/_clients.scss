@@ -1,0 +1,56 @@
+.clients-conteiner {
+  flex-direction: column;
+}
+
+.clients__list {
+  @media screen and (max-width: 479px) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+.clients__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition: border 250ms $cubic, fill 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+  }
+}

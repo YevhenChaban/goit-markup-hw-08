@@ -1,0 +1,13 @@
+.page-footer__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+.page-footer__studio {
+  color: $white-color;
+}
